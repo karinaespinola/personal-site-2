@@ -37,10 +37,10 @@ const Contact = () => {
                         />
                     </div>
                     <div className="social-links animate-on-scroll">
-                        <a href="https://www.linkedin.com/in/karinaespinola/" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/karina-espinola/" className="social-link" target="_blank" rel="noopener noreferrer">
                             <i className="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:karina.espinola.hernandez@gmail.com" className="social-link">
+                        <a href="mailto:kl.spinolah@gmail.com" className="social-link">
                             <i className="fa-solid fa-envelope"></i>
                         </a>
                     </div>
