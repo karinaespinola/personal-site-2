@@ -11,6 +11,7 @@ const Sidebar = () => {
 
     const sections = [
         { id: 'about', label: '👋 About Me' },
+        { id: 'portfolio', label: '💼 Portfolio' },
         { id: 'skills', label: '💻 Technical Skills' },
         { id: 'contact', label: '📬 Contact' }
     ];

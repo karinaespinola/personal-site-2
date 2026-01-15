@@ -455,6 +455,282 @@ body::after {
     font-size: 1.2rem;
 }
 
+/* Portfolio Section */
+.portfolio {
+    padding: 6rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-title {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        var(--primary-color),
+        var(--border-color),
+        var(--primary-color)
+    );
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.portfolio-cards {
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-card {
+    position: relative;
+    width: 45%;
+    margin-bottom: 5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.portfolio-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-card.left {
+    left: 0;
+    margin-right: auto;
+}
+
+.portfolio-card.right {
+    left: auto;
+    margin-left: auto;
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card:hover::before {
+    transform: scaleX(1);
+}
+
+.portfolio-card-content {
+    padding: 2.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    line-height: 1.4;
+}
+
+.project-description {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.portfolio-work-section {
+    margin-bottom: 1.5rem;
+}
+
+.work-label {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-family: var(--font-family);
+}
+
+.work-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.work-items li {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    padding-left: 1.2rem;
+    position: relative;
+    font-weight: 400;
+}
+
+.work-items li::before {
+    content: '▸';
+    color: var(--primary-color);
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    line-height: 1.7;
+}
+
+.work-items li:last-child {
+    margin-bottom: 0;
+}
+
+.project-note {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-weight: 400;
+}
+
+.portfolio-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    background: rgba(255, 45, 32, 0.1);
+}
+
+/* Professional Overview Section */
+.professional-overview {
+    padding: 6rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.professional-overview h2 {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.overview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.overview-list:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.overview-list:hover::before {
+    transform: scaleX(1);
+}
+
+.overview-list li {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-weight: 400;
+}
+
+.overview-list li:last-child {
+    margin-bottom: 0;
+}
+
+.overview-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    line-height: 1.8;
+}
+
 /* Contact Section Animations */
 .animate-on-scroll {
     opacity: 0;
@@ -607,6 +883,17 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -693,6 +980,65 @@ footer p {
         padding: 2rem 1.5rem;
     }
 
+    .portfolio {
+        padding: 4rem 0;
+    }
+
+    .portfolio-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .timeline-container {
+        padding: 0 1rem;
+    }
+
+    .portfolio-card {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-card-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .work-items li {
+        font-size: 0.95rem;
+    }
+
+    .project-note {
+        font-size: 0.95rem;
+    }
+
+    .professional-overview {
+        padding: 4rem 0;
+    }
+
+    .professional-overview h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .overview-content {
+        padding: 0 1rem;
+    }
+
+    .overview-list {
+        padding: 2rem 1.5rem;
+    }
+
+    .overview-list li {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
     .skill-icon {
         font-size: 2.5rem;
     }
@@ -768,6 +1114,48 @@ footer p {
     .skill-icon {
         width: 36px;
         height: 36px;
+    }
+
+    .portfolio-title {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-card-content {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+    }
+
+    .work-items li {
+        font-size: 0.9rem;
+    }
+
+    .project-note {
+        font-size: 0.9rem;
+    }
+
+    .tech-badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .professional-overview h2 {
+        font-size: 1.8rem;
+    }
+
+    .overview-list {
+        padding: 1.5rem;
+    }
+
+    .overview-list li {
+        font-size: 0.95rem;
+        margin-bottom: 0.7rem;
     }
 }
 

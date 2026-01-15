@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
+import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import './styles/main.css';
@@ -11,6 +12,7 @@ const App = () => {
       <Sidebar />
       <main className="main-content">
         <Hero />
+        <Portfolio />
         <Skills />
         <Contact />
         <footer>
