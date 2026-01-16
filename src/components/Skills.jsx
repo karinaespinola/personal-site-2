@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import laravelIcon from '../assets/laravel.svg';
 import apiIcon from '../assets/api.svg';
 import postgresqlIcon from '../assets/postgresql.svg';
+import mysqlIcon from '../assets/mysql.png';
 
 const Skills = () => {
     useEffect(() => {
@@ -53,6 +54,17 @@ const Skills = () => {
                 'Query Optimization',
                 'Data Modeling',
                 'Performance Tuning'
+            ]
+        },
+        {
+            icon: mysqlIcon,
+            title: 'MySQL',
+            description: 'Practical experience working with MySQL in production systems, including schema design, query optimization, and maintaining legacy and modern applications.',
+            features: [
+                'Relational database design',
+                'Writing optimized queries',
+                'Working with existing/legacy schemas',
+                'Transactions & data integrity'
             ]
         }
     ];

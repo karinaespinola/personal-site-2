@@ -25,16 +25,8 @@ const Contact = () => {
                 <div className="contact-content">
                     <h2 className="animate-on-scroll">Let's Connect!</h2>
                     <div className="contact-message animate-on-scroll">
-                        <p>Thanks for scrolling all the way down here—it really means a lot.</p>
-                        <p>While my raccoon buddy is deep in the zone (probably fixing bugs I created), I'd truly love to hear from you. Whether it's to talk code, collab on something cool, or just say hi—don't be shy!</p>
-                        <p>Drop me a message, share your thoughts, or send snacks. I'm all ears. 🦝💻</p>
-                    </div>
-                    <div className="contact-image-wrapper animate-on-scroll">
-                        <img 
-                            src={raccoonImage} 
-                            alt="Cristy Alas" 
-                            className="contact-image"
-                        />
+                    <p>I’m always open to new job opportunities as well as collaborating with fellow developers and teams on meaningful projects</p>
+                    <p>You can also find me on LinkedIn, where I share practical backend tips and thoughts on engineering, growth, and real-world development challenges.</p>
                     </div>
                     <div className="social-links animate-on-scroll">
                         <a href="https://www.linkedin.com/in/karina-espinola/" className="social-link" target="_blank" rel="noopener noreferrer">

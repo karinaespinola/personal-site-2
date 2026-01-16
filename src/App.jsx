@@ -17,7 +17,7 @@ const App = () => {
         <Contact />
         <footer>
           <div className="container">
-            <p>&copy; 2025 Karina Espinola. All rights reserved.</p>
+            <p>&copy; 2026 Karina Espinola. Made with 💖 and 🦝</p>
           </div>
         </footer>
       </main>
