@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import sandwichLogo from '../assets/coding-sandwich-removebg-preview.png';
+import resumePdf from '../assets/Karina_Espínola_Resume.pdf?url';
 
 const Sidebar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,8 @@ const Sidebar = () => {
         { id: 'about', label: '👋 About Me' },
         { id: 'portfolio', label: '💼 Portfolio' },
         { id: 'skills', label: '💻 Technical Skills' },
-        { id: 'contact', label: '📬 Contact' }
+        { id: 'contact', label: '📬 Contact' },
+        { id: 'resume', label: '📄 Resume', isExternal: true }
     ];
 
     return (
@@ -42,17 +44,28 @@ const Sidebar = () => {
                     <ul>
                         {sections.map((section) => (
                             <li key={section.id}>
-                                <Link
-                                    to={section.id}
-                                    smooth={true}
-                                    duration={500}
-                                    activeClass="active"
-                                    spy={true}
-                                    offset={-70}
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    {section.label}
-                                </Link>
+                                {section.isExternal ? (
+                                    <a
+                                        href={resumePdf}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {section.label}
+                                    </a>
+                                ) : (
+                                    <Link
+                                        to={section.id}
+                                        smooth={true}
+                                        duration={500}
+                                        activeClass="active"
+                                        spy={true}
+                                        offset={-70}
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {section.label}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>
