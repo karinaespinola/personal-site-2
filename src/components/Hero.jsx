@@ -7,14 +7,12 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-content">
                     <h1>Hi, I'm Karina Espinola</h1>
-                    <p className="subtitle">Backend Developer</p>
+                    <p className="subtitle">Backend Developer specialized in Laravel & APIs</p>
                     <p className="description">
-                    Hi friend! 👋 Welcome to my digital hideout. 
-                    I'm a backend developer who lives for clean code, smooth systems, 
-                    and making things work behind the scenes. 
-                    I tinker, I build, and I’m always learning—pushing myself to grow and get better 
-                    at what I do. Make yourself at home!
-                     And hey, if you’d like to reach out, I’m all ears!
+                        I build reliable, scalable backend systems for startups and growing teams.
+                        With 5+ years of experience, I focus on clean architecture, maintainable code, and making things work smoothly behind the scenes.
+
+                        I love solving complex problems, improving existing systems, and constantly learning to become a better developer every day.
                     </p>
                 </div>
                 <div className="hero-image">
